@@ -24,7 +24,7 @@ export default async(req: Request, res: Response) => {
             //    stream.pipe(fs.createWriteStream('../pdf/certification.pdf'))
             if (err) {
                 return res.send({
-                    status: 500,
+                    status: 300,
                     msg: "error"
                 })
             } else {
