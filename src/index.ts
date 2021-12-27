@@ -19,7 +19,6 @@ export default async(req: Request, res: Response) => {
         "type": "PDF",
         "renderDelay": 2000,
         "orientation": "landscape",
-        "base": "file:///" + __dirname + "\\views\\images\\",
     })
         .toStream((err: any, stream: any) => {
             //    stream.pipe(fs.createWriteStream('../pdf/certification.pdf'))
